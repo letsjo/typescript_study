@@ -1,5 +1,12 @@
 {
-  "ignore": ["node_modules/*"],
-  "ext": "js,json,ts",
-  "delay": 500
+  "compilerOptions": {
+    "module": "ESNext",
+    "typeRoots": ["./node_modules/@types"],
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ESNext", "dom"],
+    "target": "ESNext"
+  },
+  "exclude": ["node_modules"]
 }
